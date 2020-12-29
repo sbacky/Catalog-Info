@@ -20,7 +20,7 @@ def check_disk_space():
     return False
 
 def check_memory():
-    '''Returns true if available memory is less than 500MB.'''
+    """Returns true if available memory is less than 500MB."""
     du = shutil.disk_usage("/")
     # Calculate how many free megabytes
     megabytes_free = du.free / 2**20
